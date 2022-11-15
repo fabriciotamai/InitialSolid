@@ -16,10 +16,6 @@ categoriesRoutes.post("/",(request,response)=>{
     const creasteCategoryService = new CreateCategoryService(categoriesRepository)
 
     creasteCategoryService.execute({name, description})
-
-   
-
-   
   
     return response.status(201).send();
 
